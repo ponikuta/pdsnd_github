@@ -1,17 +1,19 @@
->**Note**: Please **fork** the current Udacity repository so that you will have a **remote** repository in **your** Github account. Clone the remote repository to your local machine. Later, as a part of the project "Post your Work on Github", you will push your proposed changes to the remote repository in your Github account.
+# Explore US Bikeshare Data
 
-### Date created
-Include the date you created this project and README file.
+## Date created
 
-### Project Title
-Replace the Project Title
+December 28, 2024
 
-### Description
-Describe what your project is about and what it does
+## Description
 
-### Files used
-Include the files used
+This project analyzes US bikeshare data for Chicago, New York City, and Washington. It provides insights into user behavior, trip durations, and popular stations.
 
-### Credits
-It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
+## Files used
 
+-   `bikeshare.py` - The main Python script that performs the data analysis
+-   `.gitignore` - Specifies which files Git should ignore
+-   `README.md` - Project documentation and instructions
+
+## Credits
+
+-   [Udacity's GitHub Project repository](https://github.com/udacity/pdsnd_github)
