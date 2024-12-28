@@ -1,5 +1,6 @@
 import time
 import pandas as pd
+from typing import Tuple
 
 # Display all rows
 pd.set_option('display.max_rows', None)
@@ -11,7 +12,7 @@ pd.set_option('display.max_columns', None)
 CITY_DATA = {'chicago': 'chicago.csv', 'new york city': 'new_york_city.csv', 'washington': 'washington.csv'}
 
 
-def get_filters():
+def get_filters() -> Tuple[str, str, str]:
     """
     Asks the user to specify a city, month, and day to analyze.
 
@@ -63,7 +64,7 @@ def get_filters():
     return city, month, day
 
 
-def load_data(city, month, day):
+def load_data(city: str, month: str, day: str) -> pd.DataFrame:
     """
     Loads data for the specified city and filters by month and day if applicable.
 
@@ -107,7 +108,7 @@ def load_data(city, month, day):
     return df
 
 
-def display_data(df):
+def display_data(df: pd.DataFrame) -> None:
     """
     Displays raw data upon user request in increments of 5 rows.
 
@@ -127,7 +128,7 @@ def display_data(df):
         show_data = input("Would you like to see the next 5 lines of raw data? Enter yes or no: ").strip().lower()
 
 
-def time_stats(df):
+def time_stats(df: pd.DataFrame) -> None:
     """
     Displays statistics on the most frequent times of travel.
 
@@ -155,7 +156,7 @@ def time_stats(df):
     print("=" * 100)
 
 
-def station_stats(df):
+def station_stats(df: pd.DataFrame) -> None:
     """
     Displays statistics on the most popular stations and trip.
 
@@ -182,7 +183,7 @@ def station_stats(df):
     print("=" * 100)
 
 
-def trip_duration_stats(df):
+def trip_duration_stats(df: pd.DataFrame) -> None:
     """
     Displays statistics on the total and average trip duration.
 
@@ -206,7 +207,7 @@ def trip_duration_stats(df):
     print("=" * 100)
 
 
-def user_stats(df):
+def user_stats(df: pd.DataFrame) -> None:
     """
     Displays statistics on bikeshare users.
 
@@ -246,7 +247,7 @@ def user_stats(df):
     print("=" * 100)
 
 
-def main():
+def main() -> None:
     """
     The main function that orchestrates the bikeshare data exploration.
     """
