@@ -7,7 +7,7 @@ pd.set_option('display.max_rows', None)
 # Display all columns
 pd.set_option('display.max_columns', None)
 
-
+# Dictionary mapping city names to their respective CSV files
 CITY_DATA = {'chicago': 'chicago.csv', 'new york city': 'new_york_city.csv', 'washington': 'washington.csv'}
 
 
