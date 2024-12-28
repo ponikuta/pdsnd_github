@@ -1,1 +1,4 @@
 .github/**
+
+# Data files
+*.csv
